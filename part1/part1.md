@@ -37,7 +37,7 @@
 16. `==` does conversion when diferent types are compared and is not as strict as `===` which returns true only if the two operands are absolutely equal.
 17. `How are you?` gets printed. Even though `true == 2` doesn't evaluate to true but numbers greater than `0` are still "truthy" 
 18.  See the code
-19.  The result will be `[4, 6, 8]`. We see that `modifyArray` iteraters through the array and passes each element to callback which we specified to be `doSomething`. `doSomething` in turn calls a callback, which `modifyArray` specifies to be a function mutliplying numbers by 2, and add 2 to the result. Thus, the end results is `array[i]*2+2` for each `array[i]`
+19.  The result will be `[6, 8, 10]`. We see that `modifyArray` iteraters through the array and passes each element to callback which we specified to be `doSomething`. `doSomething` in turn adds 2 to the input and calls a callback with that as an input, which `modifyArray` specifies to be a function mutliplying numbers by 2. Thus, the end results is `(array[i]+2)*2` for each `array[i]`
 20.  See the code
 21.  1   
     4   
